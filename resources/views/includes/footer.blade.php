@@ -16,4 +16,109 @@
             <button type="submit" title="Sign Up" class="sign-up">Sign Up</button>
         </div>
     </div>
+    <div class="refer-container">
+        <div class="block-container">
+            <p class="refer-text">
+                Give your friends $10 off and get $10 off when they make a purchase.
+            </p>
+            <a href="#" class="refer-link">
+                Refer a friend
+            </a>
+        </div>
+    </div>
+    <div class="links-container">
+        <div class="download-app-container">
+            <div class="title">
+                Download the App
+            </div>
+            <div class="button-container">
+                <a href="#" class="itunes-btn">
+                    <img src="/img/itunes-btn.svg" />
+                </a>
+                <a href="#" class="googleplay-btn">
+                    <img src="/img/googleplay-btn.png" />
+                </a>
+            </div>
+        </div>
+        <div class="footer-navigation">
+            <div class="links">
+                <div class="links-title">About Us</div>
+                <ul>
+                    <li>
+                        <a href="#">Our Mission</a>
+                    </li>
+                    <li>
+                        <a href="#">Authenticity</a>
+                    </li>
+                    <li>
+                        <a href="#">Locations</a>
+                    </li>
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#">Journal</a>
+                    </li>
+                    <li>
+                        <a href="#">Upcoming</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links support-links">
+                <div class="links-title">Support</div>
+                <ul>
+                    <li>
+                        <a href="#">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#">Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="#">Delivery & Returns</a>
+                    </li>
+                    <li>
+                        <a href="#">Track Your Order</a>
+                    </li>
+                    <li>
+                        <a href="#">Student Discount</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-media-container">
+            <div class="social-media">
+                <div class="title">Connect With Us</div>
+                <ul>
+                    <li class="sg-in">
+                        <a href="#">
+                            <img src="/img/ig-icon.svg" />
+                        </a>
+                    </li>
+                    <li class="sg-fb">
+                        <a href="#">
+                            <img src="/img/fb-icon.svg" />
+                        </a>
+                    </li>
+                    <li class="sg-tw">
+                        <a href="#">
+                            <img src="/img/tw-icon.svg" />
+                        </a>
+                    </li>
+                    <li class="sg-yt">
+                        <a href="#">
+                            <img src="/img/yt-icon.svg" />
+                        </a>
+                    </li>
+                    <li class="sg-pin">
+                        <a href="#">
+                            <img src="/img/pin-icon.svg" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
