@@ -1,5 +1,114 @@
 section#landing {
     margin-top: 40px;
-    background: red;
     width: 100%;
+    font-family: proxima-nova, Helvetica, Arial, sans-serif;
+    .hero {
+        width: 100%;
+        .hero-img {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .hero-text {
+            position: relative;
+            top: -2em;
+            width: 100%;
+            padding: 1.5em;
+            width: 80%;
+            z-index: 2;
+            background: #fff;
+            margin: 0 auto;
+            .box {
+                display: flex;
+                flex-wrap: wrap;
+                h4.box-header {
+                    width: 100%;
+                    margin-bottom: 1em;
+                    text-transform: uppercase;
+                    color: #a41d23;
+                    font-size: 12px;
+                }
+                h5.box-title {
+                    font-size: 24px;
+                    color: #000;
+                    
+                }
+                p.box-text {
+                    font-size: 16px;
+                    margin: 0.5em 0 1em;
+                    color: #656565;
+                    line-height: 1.35;
+                }
+                a.btn {
+                    border: 1px solid #a41d23;
+                    padding: .5em 1.5em;
+                    color: #a41d23;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .collection-preview {
+        width: 100%;
+        .collection-preview-header {
+            width: 100%;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            background: #f8f8f8;
+            .collection-name {
+                font-size: 16px;
+                color: #131313;
+            }
+            a.collection-link {
+                color: #a41d23;
+                text-decoration: none;
+                font-size: 16px;
+
+                i.fa {
+                    margin-left: .5em;
+                }
+            }
+        }
+        .collection-preview-grid {
+            padding: 2em 1em 4em;
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+            a.sneaker-preview {
+                width: 100%;
+                display: inline-block;
+                text-decoration: none;
+                color: #131313;
+                text-align: center;
+                .image-container {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .sneaker-name {
+                    font-size: 12px;
+                }
+                .sneaker-colorway {
+                    font-size: 12px;
+                    margin-top: .25em;
+                }
+                .sneaker-price {
+                    font-size: 12px;
+                    color: #656565;
+                    margin-top: .25em;
+                }
+            }
+        }
+    }
 }
