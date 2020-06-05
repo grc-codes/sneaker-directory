@@ -386,3 +386,149 @@ footer .refer-container .block-container a.refer-link {
   align-items: center;
 }
 
+footer .links-container {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .links-container .download-app-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 25px;
+  border-bottom: 1px solid #c6c8ca;
+  margin-bottom: 2em;
+}
+
+footer .links-container .download-app-container .title {
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+footer .links-container .download-app-container .button-container {
+  text-align: center;
+  width: 100%;
+  display: flex;
+}
+
+footer .links-container .download-app-container .button-container a img {
+  width: 100%;
+  max-width: 135px;
+}
+
+footer .links-container .download-app-container .button-container .itunes-btn {
+  margin: 0.5em 1em 0 0.3em;
+}
+
+footer .links-container .download-app-container .button-container .googleplay-btn img {
+  max-width: 150px;
+}
+
+footer .links-container .footer-navigation {
+  width: 100%;
+  display: flex;
+  padding: 0 25px;
+}
+
+footer .links-container .footer-navigation .links {
+  width: 50%;
+}
+
+footer .links-container .footer-navigation .links .links-title {
+  margin-bottom: 1.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 1em;
+  color: #131313;
+}
+
+footer .links-container .footer-navigation .links ul {
+  list-style: none;
+}
+
+footer .links-container .footer-navigation .links ul li {
+  letter-spacing: 0.3px;
+  margin-bottom: 1em;
+}
+
+footer .links-container .footer-navigation .links ul li a {
+  text-decoration: none;
+  color: #898b8e;
+}
+
+footer .links-container .social-media-container {
+  padding: 30px 25px;
+  margin: 1.25em 0;
+  border-top: 1px solid #c6c8ca;
+  border-bottom: 1px solid #c6c8ca;
+}
+
+footer .links-container .social-media-container .title {
+  margin-bottom: 1em;
+  font-size: 1em;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  color: #131313;
+}
+
+footer .links-container .social-media-container ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .links-container .social-media-container ul li a {
+  text-decoration: none;
+  color: #656565;
+}
+
+footer .links-container .social-media-container ul li a:hover {
+  color: #A41D23;
+}
+
+footer .links-container .social-media-container ul li a i.fab {
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+footer .links-container .site-map {
+  padding: 0 25px;
+}
+
+footer .links-container .site-map .links {
+  width: 100%;
+}
+
+footer .links-container .site-map .links ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer .links-container .site-map .links ul li {
+  margin-bottom: 20px;
+  color: #898b8e;
+  letter-spacing: 0.3px;
+  width: 100%;
+}
+
+footer .links-container .site-map .links ul li a {
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  color: #898b8e;
+}
+
+footer .links-container .site-map .links ul li a:hover {
+  color: #A41D23;
+}
+

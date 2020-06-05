@@ -33,11 +33,9 @@
             </div>
             <div class="button-container">
                 <a href="#" class="itunes-btn">
-                    <img src="/img/itunes-btn.svg" />
-                </a>
+                    <img src="/img/itunes-btn.svg" /></a>
                 <a href="#" class="googleplay-btn">
-                    <img src="/img/googleplay-btn.png" />
-                </a>
+                    <img src="/img/googleplay-btn.png" /></a>
             </div>
         </div>
         <div class="footer-navigation">
@@ -92,30 +90,45 @@
             <div class="social-media">
                 <div class="title">Connect With Us</div>
                 <ul>
-                    <li class="sg-in">
+                    <li>
                         <a href="#">
-                            <img src="/img/ig-icon.svg" />
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </li>
-                    <li class="sg-fb">
+                    <li>
                         <a href="#">
-                            <img src="/img/fb-icon.svg" />
+                            <i class="fab fa-facebook-square"></i>
                         </a>
                     </li>
-                    <li class="sg-tw">
+                    <li>
                         <a href="#">
-                            <img src="/img/tw-icon.svg" />
+                            <i class="fab fa-twitter"></i>
                         </a>
                     </li>
-                    <li class="sg-yt">
+                    <li>
                         <a href="#">
-                            <img src="/img/yt-icon.svg" />
+                            <i class="fab fa-youtube"></i>
                         </a>
                     </li>
-                    <li class="sg-pin">
+                    <li>
                         <a href="#">
-                            <img src="/img/pin-icon.svg" />
+                            <i class="fab fa-pinterest"></i>
                         </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-map">
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="#">Site Map</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy & Cookie Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms & Conditions</a>
                     </li>
                 </ul>
             </div>
