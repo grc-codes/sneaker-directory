@@ -141,10 +141,10 @@ table {
 
 header {
   width: 100%;
-  padding: 5px 10px;
+  padding: 5px 2.667vw;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 30;
   background: #fff;
 }
 
@@ -154,8 +154,58 @@ header .navbar {
   align-items: center;
 }
 
+header .navbar i.fas {
+  font-size: 4.267vw;
+  z-index: 10;
+  color: #898b8e;
+}
+
 header .navbar img.logo {
   height: 30px;
+}
+
+#menu-container {
+  background: green;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 15;
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+}
+
+#menu-container ul {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+#menu-container ul li {
+  width: 100%;
+}
+
+#menu-container ul li:first-of-type a {
+  border-top: 1px solid #c6c8ca;
+}
+
+#menu-container ul li a {
+  padding: 1.8em 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #898b8e;
+  border-bottom: 1px solid #c6c8ca;
+  background: #fff;
+  text-decoration: none;
 }
 
 section#landing {
@@ -185,7 +235,7 @@ section#landing .hero .hero-text {
   position: relative;
   top: -2em;
   width: 100%;
-  padding: 1.5em;
+  padding: 6.4vw;
   width: 80%;
   z-index: 2;
   background: #fff;
@@ -202,24 +252,26 @@ section#landing .hero .hero-text .box h4.box-header {
   margin-bottom: 1em;
   text-transform: uppercase;
   color: #a41d23;
-  font-size: 12px;
+  font-size: 3.2vw;
 }
 
 section#landing .hero .hero-text .box h5.box-title {
-  font-size: 24px;
+  font-size: 6.4vw;
   color: #000;
 }
 
 section#landing .hero .hero-text .box p.box-text {
-  font-size: 16px;
+  font-size: 4.267vw;
   margin: 0.5em 0 1em;
   color: #656565;
+  font-size: 4.267vw;
   line-height: 1.35;
 }
 
 section#landing .hero .hero-text .box a.btn {
   border: 1px solid #a41d23;
   padding: 0.5em 1.5em;
+  font-size: 4.267vw;
   color: #a41d23;
   text-decoration: none;
 }
@@ -231,20 +283,21 @@ section#landing .collection-preview {
 section#landing .collection-preview .collection-preview-header {
   width: 100%;
   padding: 1em;
+  font-size: 4.267vw;
   display: flex;
   justify-content: space-between;
   background: #f8f8f8;
 }
 
 section#landing .collection-preview .collection-preview-header .collection-name {
-  font-size: 16px;
+  font-size: 4.267vw;
   color: #131313;
 }
 
 section#landing .collection-preview .collection-preview-header a.collection-link {
   color: #a41d23;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 4.267vw;
 }
 
 section#landing .collection-preview .collection-preview-header a.collection-link i.fa {
@@ -253,6 +306,7 @@ section#landing .collection-preview .collection-preview-header a.collection-link
 
 section#landing .collection-preview .collection-preview-grid {
   padding: 2em 1em 4em;
+  font-size: 4.267vw;
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
@@ -278,16 +332,16 @@ section#landing .collection-preview .collection-preview-grid a.sneaker-preview .
 }
 
 section#landing .collection-preview .collection-preview-grid a.sneaker-preview .sneaker-name {
-  font-size: 12px;
+  font-size: 3.2vw;
 }
 
 section#landing .collection-preview .collection-preview-grid a.sneaker-preview .sneaker-colorway {
-  font-size: 12px;
+  font-size: 3.2vw;
   margin-top: 0.25em;
 }
 
 section#landing .collection-preview .collection-preview-grid a.sneaker-preview .sneaker-price {
-  font-size: 12px;
+  font-size: 3.2vw;
   color: #656565;
   margin-top: 0.25em;
 }
@@ -300,15 +354,15 @@ footer {
 footer .subscribe {
   background: #f2f2f2;
   width: 100%;
-  padding: 2em 1.5em;
+  padding: 8vw 6.6667vw;
   border-bottom: 1px solid #898b8e;
 }
 
 footer .subscribe .subscribe-text {
-  font-size: 1em;
+  font-size: 4.267vw;
   text-align: center;
   line-height: 1.5;
-  margin-bottom: 0.75em;
+  margin-bottom: 3.2vw;
   letter-spacing: 0.3px;
   color: #131313;
 }
@@ -324,10 +378,10 @@ footer .subscribe .input-container .input-box {
 }
 
 footer .subscribe .input-container .input-box input {
-  padding: 11px 9px;
+  padding: 2.933vw 2.4vw;
   background: #fff;
   border: 1px solid #898b8e;
-  font-size: 16px;
+  font-size: 4.267vw;
   font-weight: 400;
   position: relative;
   max-height: 40px;
@@ -350,7 +404,7 @@ footer .subscribe .input-container button {
 }
 
 footer .refer-container {
-  padding: 2em 1.75em;
+  padding: 8vw 6.6667vw;
   text-align: center;
   background: #f2f2f2;
 }
@@ -362,25 +416,25 @@ footer .refer-container .block-container {
 footer .refer-container .block-container p.refer-text {
   color: #000;
   text-align: center;
-  font-size: 1em;
+  font-size: 4.267vw;
   line-height: 1.5;
   letter-spacing: 0.3px;
 }
 
 footer .refer-container .block-container a.refer-link {
   width: 100%;
-  margin-top: 1em;
+  margin-top: 4.627vw;
   line-height: 2.5;
-  font-size: 0.75em;
+  font-size: 3.2vw;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background: #131313;
   border: 1px solid #131313;
   font-weight: 600;
-  padding: 0 2em;
+  padding: 0 6.4vw;
   color: #fff;
   text-decoration: none;
-  height: 4em;
+  height: 12.8vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -395,17 +449,17 @@ footer .links-container .download-app-container {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 30px 25px;
+  padding: 8vw 6.6667vw;
   border-bottom: 1px solid #c6c8ca;
-  margin-bottom: 2em;
+  margin-bottom: 8.533vw;
 }
 
 footer .links-container .download-app-container .title {
-  font-size: 1em;
+  font-size: 4.267vw;
   font-weight: 600;
   letter-spacing: 1.8px;
   text-transform: uppercase;
-  margin-bottom: 1em;
+  margin-bottom: 4.267vw;
   text-align: center;
 }
 
@@ -413,6 +467,7 @@ footer .links-container .download-app-container .button-container {
   text-align: center;
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 footer .links-container .download-app-container .button-container a img {
@@ -421,7 +476,7 @@ footer .links-container .download-app-container .button-container a img {
 }
 
 footer .links-container .download-app-container .button-container .itunes-btn {
-  margin: 0.5em 1em 0 0.3em;
+  margin: 2.133vw 4.267vw 0 1.28vw;
 }
 
 footer .links-container .download-app-container .button-container .googleplay-btn img {
@@ -431,7 +486,7 @@ footer .links-container .download-app-container .button-container .googleplay-bt
 footer .links-container .footer-navigation {
   width: 100%;
   display: flex;
-  padding: 0 25px;
+  padding: 0 6.6667vw;
 }
 
 footer .links-container .footer-navigation .links {
@@ -439,11 +494,11 @@ footer .links-container .footer-navigation .links {
 }
 
 footer .links-container .footer-navigation .links .links-title {
-  margin-bottom: 1.25em;
+  margin-bottom: 5.333vw;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.8px;
-  font-size: 1em;
+  font-size: 4.267vw;
   color: #131313;
 }
 
@@ -453,7 +508,7 @@ footer .links-container .footer-navigation .links ul {
 
 footer .links-container .footer-navigation .links ul li {
   letter-spacing: 0.3px;
-  margin-bottom: 1em;
+  margin-bottom: 4.267vw;
 }
 
 footer .links-container .footer-navigation .links ul li a {
@@ -462,15 +517,15 @@ footer .links-container .footer-navigation .links ul li a {
 }
 
 footer .links-container .social-media-container {
-  padding: 30px 25px;
-  margin: 1.25em 0;
+  padding: 8vw 6.6667vw;
+  margin: 5.333vw 0;
   border-top: 1px solid #c6c8ca;
   border-bottom: 1px solid #c6c8ca;
 }
 
 footer .links-container .social-media-container .title {
-  margin-bottom: 1em;
-  font-size: 1em;
+  margin-bottom: 4.267vw;
+  font-size: 4.267vw;
   letter-spacing: 1.8px;
   text-transform: uppercase;
   font-weight: 600;
@@ -496,11 +551,11 @@ footer .links-container .social-media-container ul li a:hover {
 
 footer .links-container .social-media-container ul li a i.fab {
   font-weight: 400;
-  font-size: 1.25em;
+  font-size: 5.333vw;
 }
 
 footer .links-container .site-map {
-  padding: 0 25px;
+  padding: 0 6.6667vw;
 }
 
 footer .links-container .site-map .links {
@@ -515,7 +570,7 @@ footer .links-container .site-map .links ul {
 }
 
 footer .links-container .site-map .links ul li {
-  margin-bottom: 20px;
+  margin-bottom: 5.333vw;
   color: #898b8e;
   letter-spacing: 0.3px;
   width: 100%;
@@ -523,7 +578,7 @@ footer .links-container .site-map .links ul li {
 
 footer .links-container .site-map .links ul li a {
   text-decoration: none;
-  font-size: 1em;
+  font-size: 4.267vw;
   cursor: pointer;
   color: #898b8e;
 }
