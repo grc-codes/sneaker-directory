@@ -3,3 +3,13 @@
 @import "header";
 @import "home";
 @import "footer";
+@import "side-menu";
+
+
+#page-content {
+    display: block;
+    transition: display .3s ease-in-out .3s;
+    &.menu-active {
+        display: none;
+    }
+}

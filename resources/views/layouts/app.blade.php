@@ -5,26 +5,21 @@
 </head>
 <body>
     @include('includes.header')
+    @include('includes.side-menu')
     <div id="page-content">
         @yield('content')
         @include('includes.footer')
     </div>
     <script>
         var menu = document.getElementById('menu-container');
-        var page = document.getElementById('page-content');
         var icon = document.getElementById('menu-toggle');
+        var page = document.getElementById('page-content');
         icon.addEventListener("click", toggleMenu);
         function toggleMenu() {
-
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-window-close');
-            if(menu.style.display === "none") {
-                menu.style.display = "block";
-                page.style.display = "none";
-            } else {
-                menu.style.display = "none";
-                page.style.display = "block";
-            }
+            menu.classList.toggle('active');
+            page.classList.toggle('menu-active');
         }
     </script>
 </body>
