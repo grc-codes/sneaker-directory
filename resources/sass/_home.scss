@@ -40,7 +40,6 @@ section#landing {
                     
                 }
                 p.box-text {
-                    font-size: 4.267vw;
                     margin: 0.5em 0 1em;
                     color: #656565;
                     font-size: 4.267vw;
@@ -111,6 +110,81 @@ section#landing {
                     font-size: 3.2vw;
                     color: #656565;
                     margin-top: .25em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    section#landing {
+        margin-top: 96px;
+        .hero {
+            background-image: url('/img/travis-270-desktop.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 75vh;
+
+            .hero-img {
+                grid-template-columns: 24fr;
+                display: none;
+            }
+            .hero-text {
+                position: relative;
+                z-index: 10;
+                top: 30%;
+                left: 10%;
+                width: 30%;
+                padding: 2em 2em 3em;
+                font-size: 16px;
+                margin: 0;
+                .box {
+                    h4.box-header {
+                        font-size: 12px;
+                    }
+                    h5.box-title {
+                        font-size: 24px;
+                    }
+                    p.box-text {
+                        font-size: 16px;
+                    }
+                    a.btn {
+                        min-width: 160px;
+                        text-align: center;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .collection-preview {
+            .collection-preview-header {
+                font-size: 16px;
+                justify-content: center;
+                .collection-name {
+                    font-size: 16px;
+                }
+                a.collection-link {
+                    font-size: 16px;
+                    position: absolute;
+                    padding: 0 1em;
+                    right: 0;
+                }
+            }
+            .collection-preview-grid {
+                font-size: 16px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                a.sneaker-preview {
+                    .sneaker-name {
+                        font-size: 16px;
+                    }
+                    .sneaker-colorway {
+                        font-size: 16px;
+                    }
+                    .sneaker-price {
+                        font-size: 16px;
+                    }
                 }
             }
         }

@@ -4,8 +4,10 @@
     @include('includes.metatags')
 </head>
 <body>
-    @include('includes.header')
-    @include('includes.side-menu')
+    <div id="navigation">
+        @include('includes.header')
+        @include('includes.side-menu')
+    </div>
     <div id="page-content">
         @yield('content')
         @include('includes.footer')

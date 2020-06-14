@@ -5,6 +5,14 @@
 @import "footer";
 @import "side-menu";
 
+#navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background: #fff;
+}
 
 #page-content {
     display: block;

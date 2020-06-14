@@ -1,29 +1,31 @@
 <footer>
-    <div class="subscribe">
-        <div class="subscribe-text">
-            Be the first to hear about new releases, special offers and more.
-        </div>
-        <div class="input-container">
-            <div class="input-box">
-                <input
-                    type="email"
-                    autocorrect="off"
-                    spellcheck="false"
-                    name="email"
-                    placeholder="Email Address"
-                >
+    <div class="top-wrapper">
+        <div class="subscribe">
+            <div class="subscribe-text">
+                Be the first to hear about new releases, special offers and more.
             </div>
-            <button type="submit" title="Sign Up" class="sign-up">Sign Up</button>
+            <div class="input-container">
+                <div class="input-box">
+                    <input
+                        type="email"
+                        autocorrect="off"
+                        spellcheck="false"
+                        name="email"
+                        placeholder="Email Address"
+                    >
+                </div>
+                <button type="submit" title="Sign Up" class="sign-up">Sign Up</button>
+            </div>
         </div>
-    </div>
-    <div class="refer-container">
-        <div class="block-container">
-            <p class="refer-text">
-                Give your friends $10 off and get $10 off when they make a purchase.
-            </p>
-            <a href="#" class="refer-link">
-                Refer a friend
-            </a>
+        <div class="refer-container">
+            <div class="block-container">
+                <p class="refer-text">
+                    Give your friends $10 off and get $10 off when they make a purchase.
+                </p>
+                <a href="#" class="refer-link">
+                    Refer a friend
+                </a>
+            </div>
         </div>
     </div>
     <div class="links-container">

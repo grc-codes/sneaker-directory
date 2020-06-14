@@ -157,7 +157,7 @@ header .navbar {
 header .navbar i.fas {
   font-size: 4.267vw;
   z-index: 10;
-  color: #898b8e;
+  color: #a2a6a9;
 }
 
 header .navbar img.logo {
@@ -166,8 +166,8 @@ header .navbar img.logo {
 
 @media screen and (min-width: 769px) {
   header {
-    background: orange;
     position: relative;
+    padding: 10px 3vw;
   }
 
   header .navbar {
@@ -178,6 +178,14 @@ header .navbar img.logo {
 
   header .navbar i.fa-bars {
     display: none;
+  }
+
+  header .navbar img.logo {
+    height: 40px;
+  }
+
+  header .navbar i.fa-search {
+    font-size: 2vw;
   }
 }
 
@@ -234,7 +242,6 @@ section#landing .hero .hero-text .box h5.box-title {
 }
 
 section#landing .hero .hero-text .box p.box-text {
-  font-size: 4.267vw;
   margin: 0.5em 0 1em;
   color: #656565;
   font-size: 4.267vw;
@@ -317,6 +324,88 @@ section#landing .collection-preview .collection-preview-grid a.sneaker-preview .
   font-size: 3.2vw;
   color: #656565;
   margin-top: 0.25em;
+}
+
+@media screen and (min-width: 769px) {
+  section#landing {
+    margin-top: 96px;
+  }
+
+  section#landing .hero {
+    background-image: url("/img/travis-270-desktop.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+  }
+
+  section#landing .hero .hero-img {
+    grid-template-columns: 24fr;
+    display: none;
+  }
+
+  section#landing .hero .hero-text {
+    position: relative;
+    z-index: 10;
+    top: 30%;
+    left: 10%;
+    width: 30%;
+    padding: 2em 2em 3em;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  section#landing .hero .hero-text .box h4.box-header {
+    font-size: 12px;
+  }
+
+  section#landing .hero .hero-text .box h5.box-title {
+    font-size: 24px;
+  }
+
+  section#landing .hero .hero-text .box p.box-text {
+    font-size: 16px;
+  }
+
+  section#landing .hero .hero-text .box a.btn {
+    min-width: 160px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  section#landing .collection-preview .collection-preview-header {
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  section#landing .collection-preview .collection-preview-header .collection-name {
+    font-size: 16px;
+  }
+
+  section#landing .collection-preview .collection-preview-header a.collection-link {
+    font-size: 16px;
+    position: absolute;
+    padding: 0 1em;
+    right: 0;
+  }
+
+  section#landing .collection-preview .collection-preview-grid {
+    font-size: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  section#landing .collection-preview .collection-preview-grid a.sneaker-preview .sneaker-name {
+    font-size: 16px;
+  }
+
+  section#landing .collection-preview .collection-preview-grid a.sneaker-preview .sneaker-colorway {
+    font-size: 16px;
+  }
+
+  section#landing .collection-preview .collection-preview-grid a.sneaker-preview .sneaker-price {
+    font-size: 16px;
+  }
 }
 
 footer {
@@ -414,6 +503,7 @@ footer .refer-container .block-container a.refer-link {
 }
 
 footer .links-container {
+  background: #fff;
   display: flex;
   flex-direction: column;
 }
@@ -560,6 +650,59 @@ footer .links-container .site-map .links ul li a:hover {
   color: #A41D23;
 }
 
+@media screen and (min-width: 769px) {
+  footer {
+    background: #f2f2f2;
+  }
+
+  footer .top-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    padding: 3.5em 0;
+    background: #f2f2f2;
+  }
+
+  footer .top-wrapper .subscribe {
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0;
+    border-bottom: 0;
+    width: 50%;
+  }
+
+  footer .top-wrapper .subscribe .subscribe-text {
+    font-size: 16px;
+    margin-bottom: 1em;
+  }
+
+  footer .top-wrapper .subscribe .input-container .input-box input {
+    font-size: 16px;
+    padding: 0.7em 0.5em;
+  }
+
+  footer .top-wrapper .subscribe .input-container button {
+    font-size: 12px;
+  }
+
+  footer .top-wrapper .refer-container {
+    width: 50%;
+  }
+
+  footer .top-wrapper .refer-container .block-container p.refer-text {
+    font-size: 16px;
+    margin-bottom: 1em;
+  }
+
+  footer .top-wrapper .refer-container .block-container a.refer-link {
+    font-size: 12px;
+    margin: 0;
+    padding: 0 2em;
+  }
+}
+
 #menu-container {
   top: 0;
   left: 0;
@@ -612,14 +755,13 @@ footer .links-container .site-map .links ul li a:hover {
 
 @media screen and (min-width: 769px) {
   #menu-container {
-    background: blue;
     position: relative;
     height: auto;
     transform: translate3d(0, 0, 0);
+    border-bottom: 1px solid #c6c8ca;
   }
 
   #menu-container .container {
-    width: 100%;
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
@@ -648,12 +790,27 @@ footer .links-container .site-map .links ul li a:hover {
     height: auto;
     padding: 1em;
     font-size: 0.75em;
-    justify-content: flex-start;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  #menu-container .container ul li a:hover {
+    color: #a41d23;
+    cursor: pointer;
   }
 
   #menu-container .container ul li a i.fas {
     display: none;
   }
+}
+
+#navigation {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background: #fff;
 }
 
 #page-content {

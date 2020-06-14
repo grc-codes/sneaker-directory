@@ -15,7 +15,7 @@ header {
         i.fas {
             font-size: 4.267vw;
             z-index: 10;
-            color: #898b8e;
+            color: #a2a6a9;
         }
         img.logo {
             height: 30px;
@@ -25,14 +25,20 @@ header {
 
 @media screen and (min-width: 769px) {
     header {
-        background: orange;
         position: relative;
+        padding: 10px 3vw;
         .navbar {
             max-width: 1200px;
             width: 100%;
             margin: 0 auto;
             i.fa-bars {
                 display: none;
+            }
+            img.logo {
+                height: 40px;
+            }
+            i.fa-search {
+                font-size: 2vw;
             }
         }
     }
