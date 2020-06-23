@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Static Pages
+
+Route::get('/', 'StaticPagesController@home');
+Route::get('/collection', 'StaticPagesController@collection');

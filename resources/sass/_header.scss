@@ -1,11 +1,12 @@
 header {
     width: 100%;
-    padding: 5px 2.667vw;
+    padding: 5px .625em;
 
     position: fixed;
     top: 0;
     z-index: 30;
     background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.06);
 
     .navbar {
         display: flex;
@@ -13,7 +14,7 @@ header {
         align-items: center;
         
         i.fas {
-            font-size: 4.267vw;
+            font-size: 16px;
             z-index: 10;
             color: #a2a6a9;
         }
@@ -38,7 +39,7 @@ header {
                 height: 40px;
             }
             i.fa-search {
-                font-size: 2vw;
+                font-size: 16px;
             }
         }
     }

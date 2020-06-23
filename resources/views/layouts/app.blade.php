@@ -15,13 +15,11 @@
     <script>
         var menu = document.getElementById('menu-container');
         var icon = document.getElementById('menu-toggle');
-        var page = document.getElementById('page-content');
         icon.addEventListener("click", toggleMenu);
         function toggleMenu() {
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-window-close');
             menu.classList.toggle('active');
-            page.classList.toggle('menu-active');
         }
     </script>
 </body>

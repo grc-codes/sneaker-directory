@@ -141,11 +141,12 @@ table {
 
 header {
   width: 100%;
-  padding: 5px 2.667vw;
+  padding: 5px 0.625em;
   position: fixed;
   top: 0;
   z-index: 30;
   background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 header .navbar {
@@ -155,7 +156,7 @@ header .navbar {
 }
 
 header .navbar i.fas {
-  font-size: 4.267vw;
+  font-size: 16px;
   z-index: 10;
   color: #a2a6a9;
 }
@@ -185,7 +186,7 @@ header .navbar img.logo {
   }
 
   header .navbar i.fa-search {
-    font-size: 2vw;
+    font-size: 16px;
   }
 }
 
@@ -286,7 +287,7 @@ section#landing .collection-preview .collection-preview-header a.collection-link
 
 section#landing .collection-preview .collection-preview-grid {
   padding: 2em 1em 4em;
-  font-size: 4.267vw;
+  font-size: 16px;
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
@@ -312,16 +313,16 @@ section#landing .collection-preview .collection-preview-grid a.sneaker-preview .
 }
 
 section#landing .collection-preview .collection-preview-grid a.sneaker-preview .sneaker-name {
-  font-size: 3.2vw;
+  font-size: 12px;
 }
 
 section#landing .collection-preview .collection-preview-grid a.sneaker-preview .sneaker-colorway {
-  font-size: 3.2vw;
+  font-size: 12px;
   margin-top: 0.25em;
 }
 
 section#landing .collection-preview .collection-preview-grid a.sneaker-preview .sneaker-price {
-  font-size: 3.2vw;
+  font-size: 12px;
   color: #656565;
   margin-top: 0.25em;
 }
@@ -408,6 +409,97 @@ section#landing .collection-preview .collection-preview-grid a.sneaker-preview .
   }
 }
 
+section#collection-page {
+  margin-top: 40px;
+  width: 100%;
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+}
+
+section#collection-page .hero {
+  width: 100%;
+  padding: 1em;
+  overflow: scroll;
+}
+
+section#collection-page .hero .hero-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#collection-page .hero .hero-text {
+  padding: 1em;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+  top: -1em;
+}
+
+section#collection-page .hero .hero-text h4.box-header {
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: #a41d23;
+  font-size: 12px;
+}
+
+section#collection-page .hero .hero-text h5.box-title {
+  line-height: 1.35;
+  margin: 0.5em 0;
+  color: #131313;
+  font-size: 24px;
+}
+
+section#collection-page .hero .hero-text p.box-text {
+  font-size: 16px;
+  color: #656565;
+  line-height: 1.35;
+}
+
+section#collection-page .collection-preview-grid {
+  width: 100%;
+  padding: 2em 1em 4em;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+section#collection-page .collection-preview-grid a.sneaker-preview {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  color: #131313;
+  text-align: center;
+}
+
+section#collection-page .collection-preview-grid a.sneaker-preview .image-container {
+  width: 100%;
+}
+
+section#collection-page .collection-preview-grid a.sneaker-preview .image-container img {
+  width: 100%;
+}
+
+section#collection-page .collection-preview-grid a.sneaker-preview .sneaker-name {
+  font-size: 12px;
+}
+
+section#collection-page .collection-preview-grid a.sneaker-preview .sneaker-colorway {
+  font-size: 12px;
+  margin-top: 0.25em;
+}
+
+section#collection-page .collection-preview-grid a.sneaker-preview .sneaker-price {
+  font-size: 12px;
+  color: #656565;
+  margin-top: 0.25em;
+}
+
 footer {
   width: 100%;
   font-family: proxima-nova, Helvetica, Arial, sans-serif;
@@ -416,15 +508,15 @@ footer {
 footer .subscribe {
   background: #f2f2f2;
   width: 100%;
-  padding: 8vw 6.6667vw;
+  padding: 1.875em 1.5625em;
   border-bottom: 1px solid #898b8e;
 }
 
 footer .subscribe .subscribe-text {
-  font-size: 4.267vw;
+  font-size: 16px;
   text-align: center;
   line-height: 1.5;
-  margin-bottom: 3.2vw;
+  margin-bottom: 0.75em;
   letter-spacing: 0.3px;
   color: #131313;
 }
@@ -463,6 +555,7 @@ footer .subscribe .input-container button {
   background: #131313;
   border: 1px solid #131313;
   color: #fff;
+  font-weight: 600;
 }
 
 footer .refer-container {
@@ -485,18 +578,18 @@ footer .refer-container .block-container p.refer-text {
 
 footer .refer-container .block-container a.refer-link {
   width: 100%;
-  margin-top: 4.627vw;
+  margin-top: 1.3em;
   line-height: 2.5;
-  font-size: 3.2vw;
+  font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background: #131313;
   border: 1px solid #131313;
   font-weight: 600;
-  padding: 0 6.4vw;
+  padding: 0 2em;
   color: #fff;
   text-decoration: none;
-  height: 12.8vw;
+  height: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,20 +602,21 @@ footer .links-container {
 }
 
 footer .links-container .download-app-container {
+  order: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 8vw 6.6667vw;
-  border-bottom: 1px solid #c6c8ca;
-  margin-bottom: 8.533vw;
+  padding: 1.875em 1.5625em;
+  border-bottom: 1px solid red;
+  margin-bottom: 2em;
 }
 
 footer .links-container .download-app-container .title {
-  font-size: 4.267vw;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 1.8px;
   text-transform: uppercase;
-  margin-bottom: 4.267vw;
+  margin-bottom: 1em;
   text-align: center;
 }
 
@@ -547,9 +641,10 @@ footer .links-container .download-app-container .button-container .googleplay-bt
 }
 
 footer .links-container .footer-navigation {
+  order: 2;
   width: 100%;
   display: flex;
-  padding: 0 6.6667vw;
+  padding: 0 1.5625em;
 }
 
 footer .links-container .footer-navigation .links {
@@ -557,11 +652,11 @@ footer .links-container .footer-navigation .links {
 }
 
 footer .links-container .footer-navigation .links .links-title {
-  margin-bottom: 5.333vw;
+  margin-bottom: 1.25em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.8px;
-  font-size: 4.267vw;
+  font-size: 16px;
   color: #131313;
 }
 
@@ -571,7 +666,10 @@ footer .links-container .footer-navigation .links ul {
 
 footer .links-container .footer-navigation .links ul li {
   letter-spacing: 0.3px;
-  margin-bottom: 4.267vw;
+  margin-bottom: 1em;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
 }
 
 footer .links-container .footer-navigation .links ul li a {
@@ -580,15 +678,16 @@ footer .links-container .footer-navigation .links ul li a {
 }
 
 footer .links-container .social-media-container {
-  padding: 8vw 6.6667vw;
+  order: 3;
+  padding: 1.875em 1.5625em;
   margin: 5.333vw 0;
   border-top: 1px solid #c6c8ca;
   border-bottom: 1px solid #c6c8ca;
 }
 
 footer .links-container .social-media-container .title {
-  margin-bottom: 4.267vw;
-  font-size: 4.267vw;
+  margin-bottom: 1em;
+  font-size: 16px;
   letter-spacing: 1.8px;
   text-transform: uppercase;
   font-weight: 600;
@@ -618,7 +717,8 @@ footer .links-container .social-media-container ul li a i.fab {
 }
 
 footer .links-container .site-map {
-  padding: 0 6.6667vw;
+  order: 4;
+  padding: 0 1.5625em;
 }
 
 footer .links-container .site-map .links {
@@ -633,7 +733,7 @@ footer .links-container .site-map .links ul {
 }
 
 footer .links-container .site-map .links ul li {
-  margin-bottom: 5.333vw;
+  margin-bottom: 1.25em;
   color: #898b8e;
   letter-spacing: 0.3px;
   width: 100%;
@@ -641,7 +741,7 @@ footer .links-container .site-map .links ul li {
 
 footer .links-container .site-map .links ul li a {
   text-decoration: none;
-  font-size: 4.267vw;
+  font-size: 16px;
   cursor: pointer;
   color: #898b8e;
 }
@@ -650,7 +750,7 @@ footer .links-container .site-map .links ul li a:hover {
   color: #A41D23;
 }
 
-@media screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   footer {
     background: #f2f2f2;
   }
@@ -671,11 +771,13 @@ footer .links-container .site-map .links ul li a:hover {
     padding: 0;
     border-bottom: 0;
     width: 50%;
+    padding-right: 120px;
   }
 
   footer .top-wrapper .subscribe .subscribe-text {
     font-size: 16px;
     margin-bottom: 1em;
+    font-weight: 400;
   }
 
   footer .top-wrapper .subscribe .input-container .input-box input {
@@ -683,12 +785,40 @@ footer .links-container .site-map .links ul li a:hover {
     padding: 0.7em 0.5em;
   }
 
+  footer .top-wrapper .subscribe .input-container .input-box input::-webkit-input-placeholder {
+    color: #898b8e;
+  }
+
+  footer .top-wrapper .subscribe .input-container .input-box input::-moz-placeholder {
+    color: #898b8e;
+  }
+
+  footer .top-wrapper .subscribe .input-container .input-box input:-ms-input-placeholder {
+    color: #898b8e;
+  }
+
+  footer .top-wrapper .subscribe .input-container .input-box input::-ms-input-placeholder {
+    color: #898b8e;
+  }
+
+  footer .top-wrapper .subscribe .input-container .input-box input::placeholder {
+    color: #898b8e;
+  }
+
   footer .top-wrapper .subscribe .input-container button {
     font-size: 12px;
   }
 
+  footer .top-wrapper .subscribe .input-container button:hover {
+    background: #A41D23;
+    border-color: #A41D23;
+  }
+
   footer .top-wrapper .refer-container {
     width: 50%;
+    padding: 0;
+    padding-left: 120px;
+    border-left: 1px solid #898b8e;
   }
 
   footer .top-wrapper .refer-container .block-container p.refer-text {
@@ -698,8 +828,140 @@ footer .links-container .site-map .links ul li a:hover {
 
   footer .top-wrapper .refer-container .block-container a.refer-link {
     font-size: 12px;
+    display: block;
     margin: 0;
-    padding: 0 2em;
+    width: 100%;
+    line-height: 45px;
+  }
+
+  footer .top-wrapper .refer-container .block-container a.refer-link:hover {
+    background: #A41D23;
+    border-color: #A41D23;
+  }
+
+  footer .links-wrapper {
+    background: #fff;
+    width: 100%;
+    padding: 3.5em 0 0.625em;
+    margin: 0 auto;
+    line-height: 16px;
+  }
+
+  footer .links-wrapper .links-container {
+    flex-direction: row;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    line-height: 16px;
+  }
+
+  footer .links-wrapper .links-container .social-app-wrapper {
+    width: 50%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+  }
+
+  footer .links-wrapper .links-container .social-app-wrapper .download-app-container {
+    padding: 0;
+    order: 2;
+    margin-bottom: 50px;
+    border: 0;
+  }
+
+  footer .links-wrapper .links-container .social-app-wrapper .download-app-container .title {
+    text-align: left;
+  }
+
+  footer .links-wrapper .links-container .social-app-wrapper .download-app-container .button-container {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  footer .links-wrapper .links-container .social-app-wrapper .download-app-container .button-container a.itunes-btn {
+    width: 100%;
+    max-width: 118px;
+    margin: 0;
+    margin-right: 1em;
+  }
+
+  footer .links-wrapper .links-container .social-app-wrapper .download-app-container .button-container a.googleplay-btn {
+    max-width: 150px;
+    width: 100%;
+    margin: -9px 8px;
+  }
+
+  footer .links-wrapper .links-container .social-app-wrapper .social-media-container {
+    padding: 0;
+    order: 3;
+    margin: 0;
+    border: 0;
+  }
+
+  footer .links-wrapper .links-container .social-app-wrapper .social-media-container .title {
+    text-align: left;
+  }
+
+  footer .links-wrapper .links-container .social-app-wrapper .social-media-container ul {
+    margin: auto;
+    max-width: none;
+    justify-content: flex-start;
+  }
+
+  footer .links-wrapper .links-container .social-app-wrapper .social-media-container ul li {
+    margin-right: 1em;
+  }
+
+  footer .links-wrapper .links-container .social-app-wrapper .social-media-container ul li a i.fab {
+    font-size: 20px;
+  }
+
+  footer .links-wrapper .links-container .footer-navigation {
+    line-height: 16px;
+    width: 50%;
+    padding: 0;
+    order: 1;
+  }
+
+  footer .links-wrapper .links-container .footer-navigation .links .links-title {
+    display: block;
+  }
+
+  footer .links-wrapper .links-container .footer-navigation .links a {
+    line-height: 24px;
+    color: #656565;
+  }
+
+  footer .links-wrapper .links-container .footer-navigation .links a:hover {
+    color: #A41d23;
+  }
+
+  footer .links-wrapper .links-container .site-map {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 2.875em;
+    padding: 0;
+  }
+
+  footer .links-wrapper .links-container .site-map .links ul {
+    justify-content: center;
+  }
+
+  footer .links-wrapper .links-container .site-map .links ul li {
+    width: auto;
+    padding: 0 0.5em;
+  }
+
+  footer .links-wrapper .links-container .site-map .links ul li a {
+    color: #656565;
+    line-height: 24px;
+  }
+
+  footer .links-wrapper .links-container .site-map .links ul li a:hover {
+    color: #A41D23;
   }
 }
 
@@ -711,7 +973,7 @@ footer .links-container .site-map .links ul li a:hover {
   position: absolute;
   z-index: 12;
   font-family: proxima-nova, Helvetica, Arial, sans-serif;
-  transform: translate3d(-100vw, 0, 0);
+  transform: translate3d(0, -100vh, 0);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -733,10 +995,6 @@ footer .links-container .site-map .links ul li a:hover {
   border-bottom: 1px solid #c6c8ca;
 }
 
-#menu-container ul li:first-of-type {
-  border-top: 1px solid #c6c8ca;
-}
-
 #menu-container ul li a {
   width: 100%;
   height: 100%;
@@ -753,7 +1011,7 @@ footer .links-container .site-map .links ul li a:hover {
   text-decoration: none;
 }
 
-@media screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   #menu-container {
     position: relative;
     height: auto;
@@ -810,15 +1068,22 @@ footer .links-container .site-map .links ul li a:hover {
   top: 0;
   left: 0;
   z-index: 20;
+  overflow: hidden;
   background: #fff;
 }
 
 #page-content {
   display: block;
   transition: display 0.3s ease-in-out 0.3s;
+  overflow: hidden;
 }
 
 #page-content.menu-active {
   display: none;
+}
+
+*,
+body {
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
 }
 
