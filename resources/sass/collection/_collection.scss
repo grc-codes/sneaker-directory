@@ -5,7 +5,6 @@ section#collection-page {
     .hero {
         width: 100%;
         padding: 1em;
-        overflow: scroll;
         .hero-img {
             width: 100%;
             height: 100%;
@@ -15,7 +14,7 @@ section#collection-page {
         }
         .hero-text {
             padding: 1em;
-            width: 80%;
+            width: 95%;
             margin: 0 auto;
             position: relative;
             background: #fff;
@@ -77,4 +76,62 @@ section#collection-page {
         }
     }
 
+}
+
+@media screen and (min-width: 769px) {
+    section#collection-page {
+        margin-top: 96px;
+        .hero {
+            line-height: 1.35;
+            padding: 1em;
+            width: 100%;
+            display: grid;
+            column-gap: 0;
+            grid-template-columns: auto repeat(24, 1fr) auto;
+            grid-template-rows: 1em 2em 1fr 1.5em auto 2em 1em;
+            height: auto;
+            .hero-img-wrapper {
+                grid-area: 3 / 8 / 6 / 24;
+                height: 100%;
+                .hero-img-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: stretch;
+                    height: 100%;
+                    .hero-img {
+                        position: relative;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .hero-text {
+                top: 0;
+                display: inline-grid;
+                grid-area: 3 / 4 / 5 / 12;
+                z-index: 2;
+                opacity: 1;
+                align-self: center;
+                min-width: 21em;
+                max-width: 446px;
+            }
+        }
+        .collection-preview-grid {
+            font-size: 16px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            a.sneaker-preview {
+                .sneaker-name {
+                    font-size: 16px;
+                }
+                .sneaker-colorway {
+                    font-size: 16px;
+                }
+                .sneaker-price {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }

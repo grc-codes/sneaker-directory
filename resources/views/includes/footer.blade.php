@@ -11,6 +11,7 @@
                         autocorrect="off"
                         spellcheck="false"
                         name="email"
+                        placeholder="Email Address"
                     >
                 </div>
                 <button type="submit" title="Sign Up" class="sign-up">Sign Up</button>
@@ -29,6 +30,17 @@
     </div>
     <div class="links-wrapper">
         <div class="links-container">
+            <div class="download-app-container mobile-app">
+                <div class="title">
+                    Download the dApp
+                </div>
+                <div class="button-container">
+                    <a href="#" class="itunes-btn">
+                        <img src="/img/itunes-btn.svg" /></a>
+                    <a href="#" class="googleplay-btn">
+                        <img src="/img/googleplay-btn.png" /></a>
+                </div>
+            </div>
             <div class="footer-navigation">
                 <div class="links">
                     <div class="links-title">About Us</div>

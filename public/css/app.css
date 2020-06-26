@@ -142,7 +142,6 @@ table {
 header {
   width: 100%;
   padding: 5px 0.625em;
-  position: fixed;
   top: 0;
   z-index: 30;
   background: #fff;
@@ -168,7 +167,8 @@ header .navbar img.logo {
 @media screen and (min-width: 769px) {
   header {
     position: relative;
-    padding: 10px 3vw;
+    padding: 10px 1.5em;
+    border: 0;
   }
 
   header .navbar {
@@ -217,8 +217,8 @@ section#landing .hero .hero-text {
   position: relative;
   top: -2em;
   width: 100%;
-  padding: 6.4vw;
-  width: 80%;
+  padding: 1.5em;
+  width: 90%;
   z-index: 2;
   background: #fff;
   margin: 0 auto;
@@ -234,25 +234,26 @@ section#landing .hero .hero-text .box h4.box-header {
   margin-bottom: 1em;
   text-transform: uppercase;
   color: #a41d23;
-  font-size: 3.2vw;
+  font-size: 12px;
 }
 
 section#landing .hero .hero-text .box h5.box-title {
-  font-size: 6.4vw;
-  color: #000;
+  width: 100%;
+  font-size: 24px;
 }
 
 section#landing .hero .hero-text .box p.box-text {
+  width: 100%;
   margin: 0.5em 0 1em;
   color: #656565;
-  font-size: 4.267vw;
+  font-size: 16px;
   line-height: 1.35;
 }
 
 section#landing .hero .hero-text .box a.btn {
   border: 1px solid #a41d23;
   padding: 0.5em 1.5em;
-  font-size: 4.267vw;
+  font-size: 16px;
   color: #a41d23;
   text-decoration: none;
 }
@@ -264,25 +265,26 @@ section#landing .collection-preview {
 section#landing .collection-preview .collection-preview-header {
   width: 100%;
   padding: 1em;
-  font-size: 4.267vw;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
   background: #f8f8f8;
 }
 
 section#landing .collection-preview .collection-preview-header .collection-name {
-  font-size: 4.267vw;
+  font-size: 16px;
   color: #131313;
 }
 
 section#landing .collection-preview .collection-preview-header a.collection-link {
   color: #a41d23;
   text-decoration: none;
-  font-size: 4.267vw;
+  font-size: 16px;
 }
 
 section#landing .collection-preview .collection-preview-header a.collection-link i.fa {
   margin-left: 0.5em;
+  color: #a41d23;
 }
 
 section#landing .collection-preview .collection-preview-grid {
@@ -418,7 +420,6 @@ section#collection-page {
 section#collection-page .hero {
   width: 100%;
   padding: 1em;
-  overflow: scroll;
 }
 
 section#collection-page .hero .hero-img {
@@ -431,7 +432,7 @@ section#collection-page .hero .hero-img {
 
 section#collection-page .hero .hero-text {
   padding: 1em;
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   position: relative;
   background: #fff;
@@ -500,6 +501,73 @@ section#collection-page .collection-preview-grid a.sneaker-preview .sneaker-pric
   margin-top: 0.25em;
 }
 
+@media screen and (min-width: 769px) {
+  section#collection-page {
+    margin-top: 96px;
+  }
+
+  section#collection-page .hero {
+    line-height: 1.35;
+    padding: 1em;
+    width: 100%;
+    display: grid;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    grid-template-columns: auto repeat(24, 1fr) auto;
+    grid-template-rows: 1em 2em 1fr 1.5em auto 2em 1em;
+    height: auto;
+  }
+
+  section#collection-page .hero .hero-img-wrapper {
+    grid-area: 3/8/6/24;
+    height: 100%;
+  }
+
+  section#collection-page .hero .hero-img-wrapper .hero-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+  }
+
+  section#collection-page .hero .hero-img-wrapper .hero-img-container .hero-img {
+    position: relative;
+  }
+
+  section#collection-page .hero .hero-img-wrapper .hero-img-container .hero-img img {
+    width: 100%;
+  }
+
+  section#collection-page .hero .hero-text {
+    top: 0;
+    display: inline-grid;
+    grid-area: 3/4/5/12;
+    z-index: 2;
+    opacity: 1;
+    align-self: center;
+    min-width: 21em;
+    max-width: 446px;
+  }
+
+  section#collection-page .collection-preview-grid {
+    font-size: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  section#collection-page .collection-preview-grid a.sneaker-preview .sneaker-name {
+    font-size: 16px;
+  }
+
+  section#collection-page .collection-preview-grid a.sneaker-preview .sneaker-colorway {
+    font-size: 16px;
+  }
+
+  section#collection-page .collection-preview-grid a.sneaker-preview .sneaker-price {
+    font-size: 16px;
+  }
+}
+
 footer {
   width: 100%;
   font-family: proxima-nova, Helvetica, Arial, sans-serif;
@@ -523,6 +591,7 @@ footer .subscribe .subscribe-text {
 
 footer .subscribe .input-container {
   display: flex;
+  align-items: stretch;
 }
 
 footer .subscribe .input-container .input-box {
@@ -532,10 +601,10 @@ footer .subscribe .input-container .input-box {
 }
 
 footer .subscribe .input-container .input-box input {
-  padding: 2.933vw 2.4vw;
+  padding: 0.6875em 0.5625em;
   background: #fff;
   border: 1px solid #898b8e;
-  font-size: 4.267vw;
+  font-size: 16px;
   font-weight: 400;
   position: relative;
   max-height: 40px;
@@ -547,7 +616,6 @@ footer .subscribe .input-container button {
   padding: 0;
   width: 70px;
   text-align: center;
-  height: 40px;
   font-size: 0.75em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -559,7 +627,7 @@ footer .subscribe .input-container button {
 }
 
 footer .refer-container {
-  padding: 8vw 6.6667vw;
+  padding: 1.875em 1.5625em;
   text-align: center;
   background: #f2f2f2;
 }
@@ -571,7 +639,7 @@ footer .refer-container .block-container {
 footer .refer-container .block-container p.refer-text {
   color: #000;
   text-align: center;
-  font-size: 4.267vw;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.3px;
 }
@@ -602,12 +670,11 @@ footer .links-container {
 }
 
 footer .links-container .download-app-container {
-  order: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 1.875em 1.5625em;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #c6c8ca;
   margin-bottom: 2em;
 }
 
@@ -633,7 +700,7 @@ footer .links-container .download-app-container .button-container a img {
 }
 
 footer .links-container .download-app-container .button-container .itunes-btn {
-  margin: 2.133vw 4.267vw 0 1.28vw;
+  margin: 0.5em 1em 0 0.297em;
 }
 
 footer .links-container .download-app-container .button-container .googleplay-btn img {
@@ -641,7 +708,6 @@ footer .links-container .download-app-container .button-container .googleplay-bt
 }
 
 footer .links-container .footer-navigation {
-  order: 2;
   width: 100%;
   display: flex;
   padding: 0 1.5625em;
@@ -677,15 +743,18 @@ footer .links-container .footer-navigation .links ul li a {
   color: #898b8e;
 }
 
-footer .links-container .social-media-container {
-  order: 3;
+footer .links-container .social-app-wrapper .download-app-container {
+  display: none;
+}
+
+footer .links-container .social-app-wrapper .social-media-container {
   padding: 1.875em 1.5625em;
-  margin: 5.333vw 0;
+  margin: 1.25em 0;
   border-top: 1px solid #c6c8ca;
   border-bottom: 1px solid #c6c8ca;
 }
 
-footer .links-container .social-media-container .title {
+footer .links-container .social-app-wrapper .social-media-container .title {
   margin-bottom: 1em;
   font-size: 16px;
   letter-spacing: 1.8px;
@@ -695,29 +764,30 @@ footer .links-container .social-media-container .title {
   color: #131313;
 }
 
-footer .links-container .social-media-container ul {
+footer .links-container .social-app-wrapper .social-media-container ul {
   width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
 
-footer .links-container .social-media-container ul li a {
+footer .links-container .social-app-wrapper .social-media-container ul li a {
   text-decoration: none;
+}
+
+footer .links-container .social-app-wrapper .social-media-container ul li a i.fab {
+  font-weight: 400;
+  font-size: 1.25em;
   color: #656565;
 }
 
-footer .links-container .social-media-container ul li a:hover {
+footer .links-container .social-app-wrapper .social-media-container ul li a i.fab:hover {
   color: #A41D23;
 }
 
-footer .links-container .social-media-container ul li a i.fab {
-  font-weight: 400;
-  font-size: 5.333vw;
-}
-
 footer .links-container .site-map {
-  order: 4;
   padding: 0 1.5625em;
 }
 
@@ -856,17 +926,20 @@ footer .links-container .site-map .links ul li a:hover {
     line-height: 16px;
   }
 
+  footer .links-wrapper .links-container .mobile-app {
+    display: none;
+  }
+
   footer .links-wrapper .links-container .social-app-wrapper {
     width: 50%;
-    order: 2;
     display: flex;
     flex-direction: column;
     padding-left: 120px;
   }
 
   footer .links-wrapper .links-container .social-app-wrapper .download-app-container {
+    display: inline-block;
     padding: 0;
-    order: 2;
     margin-bottom: 50px;
     border: 0;
   }
@@ -895,7 +968,6 @@ footer .links-container .site-map .links ul li a:hover {
 
   footer .links-wrapper .links-container .social-app-wrapper .social-media-container {
     padding: 0;
-    order: 3;
     margin: 0;
     border: 0;
   }
@@ -922,7 +994,6 @@ footer .links-container .site-map .links ul li a:hover {
     line-height: 16px;
     width: 50%;
     padding: 0;
-    order: 1;
   }
 
   footer .links-wrapper .links-container .footer-navigation .links .links-title {
@@ -969,9 +1040,8 @@ footer .links-container .site-map .links ul li a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   position: absolute;
-  z-index: 12;
+  z-index: 10;
   font-family: proxima-nova, Helvetica, Arial, sans-serif;
   transform: translate3d(0, -100vh, 0);
   transition: transform 0.3s ease-in-out;
@@ -1011,6 +1081,10 @@ footer .links-container .site-map .links ul li a:hover {
   text-decoration: none;
 }
 
+#menu-container ul li i.fas {
+  color: #898b8e;
+}
+
 @media only screen and (min-width: 769px) {
   #menu-container {
     position: relative;
@@ -1019,32 +1093,32 @@ footer .links-container .site-map .links ul li a:hover {
     border-bottom: 1px solid #c6c8ca;
   }
 
-  #menu-container .container {
+  #menu-container .menu-wrapper {
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
     width: 65%;
   }
 
-  #menu-container .container ul {
+  #menu-container .menu-wrapper ul {
     height: auto;
     flex-wrap: nowrap;
     max-width: 1200px;
     margin: 0 auto;
   }
 
-  #menu-container .container ul li {
+  #menu-container .menu-wrapper ul li {
     border-bottom: none;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  #menu-container .container ul li:first-of-type {
+  #menu-container .menu-wrapper ul li:first-of-type {
     border-top: none;
   }
 
-  #menu-container .container ul li a {
+  #menu-container .menu-wrapper ul li a {
     height: auto;
     padding: 1em;
     font-size: 0.75em;
@@ -1052,12 +1126,12 @@ footer .links-container .site-map .links ul li a:hover {
     white-space: nowrap;
   }
 
-  #menu-container .container ul li a:hover {
+  #menu-container .menu-wrapper ul li a:hover {
     color: #a41d23;
     cursor: pointer;
   }
 
-  #menu-container .container ul li a i.fas {
+  #menu-container .menu-wrapper ul li a i.fas {
     display: none;
   }
 }
@@ -1085,5 +1159,6 @@ footer .links-container .site-map .links ul li a:hover {
 *,
 body {
   font-family: proxima-nova, Helvetica, Arial, sans-serif;
+  color: #131313;
 }
 

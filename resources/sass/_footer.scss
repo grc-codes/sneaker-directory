@@ -16,16 +16,17 @@ footer {
         }
         .input-container {
             display: flex;
+            align-items: stretch;
             
             .input-box {
                 width: calc(100% - 70px);
                 display: inline-block;
                 position: relative;
                 input {
-                    padding: 2.933vw 2.4vw;
+                    padding: 0.6875em 0.5625em;
                     background: #fff;
                     border: 1px solid #898b8e;
-                    font-size: 4.267vw;
+                    font-size: 16px;
                     font-weight: 400;
                     position: relative;
                     max-height: 40px;
@@ -38,7 +39,6 @@ footer {
                 padding: 0;
                 width: 70px;
                 text-align: center;
-                height: 40px;
                 font-size: .75em;
                 letter-spacing: .1em;
                 text-transform: uppercase;
@@ -52,7 +52,7 @@ footer {
     }
 
     .refer-container {
-        padding: 8vw 6.6667vw;
+        padding: 1.875em 1.5625em;
         text-align: center;
         background: #f2f2f2;
         .block-container {
@@ -60,7 +60,7 @@ footer {
             p.refer-text {
                 color: #000;
                 text-align: center;
-                font-size: 4.267vw;
+                font-size: 16px;
                 line-height: 1.5;
                 letter-spacing: .3px;
             }
@@ -91,12 +91,11 @@ footer {
         display: flex;
         flex-direction: column;
         .download-app-container {
-            order: 1;
             width: 100%;
             display: flex;
             flex-direction: column;
             padding: 1.875em 1.5625em;
-            border-bottom: 1px solid red;
+            border-bottom: 1px solid #c6c8ca;
             margin-bottom: 2em;
 
             .title {
@@ -120,7 +119,7 @@ footer {
                     }
                 }
                 .itunes-btn {
-                    margin: 2.133vw 4.267vw 0 1.28vw;
+                    margin: 0.5em 1em 0 0.297em;
                 }
                 
                 .googleplay-btn {
@@ -131,7 +130,6 @@ footer {
             }
         }
         .footer-navigation {
-            order: 2;
             width: 100%;
             display: flex;
             padding: 0 1.5625em;
@@ -161,44 +159,49 @@ footer {
                 }
             }
         }
-        .social-media-container {
-            order: 3;
-            padding: 1.875em 1.5625em;
-            margin: 5.333vw 0;
-            border-top: 1px solid #c6c8ca;
-            border-bottom: 1px solid #c6c8ca;
-            .title {
-                margin-bottom: 1em;
-                font-size: 16px;
-                letter-spacing: 1.8px;
-                text-transform: uppercase;
-                font-weight: 600;
-                text-align: center;
-                color: #131313;
+        .social-app-wrapper {
+            .download-app-container {
+                display: none;
             }
-            ul {
-                width: 100%;
-                list-style: none;
-                display: flex;
-                justify-content: space-between;
-
-                li {
-                    a {
-                        text-decoration: none;
-                        color: #656565;
-                        &:hover {
-                            color: #A41D23;
-                        }
-                        i.fab {
-                            font-weight: 400;
-                            font-size: 5.333vw;
+            .social-media-container {
+                padding: 1.875em 1.5625em;
+                margin: 1.25em 0;
+                border-top: 1px solid #c6c8ca;
+                border-bottom: 1px solid #c6c8ca;
+                .title {
+                    margin-bottom: 1em;
+                    font-size: 16px;
+                    letter-spacing: 1.8px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    text-align: center;
+                    color: #131313;
+                }
+                ul {
+                    width: 100%;
+                    max-width: 375px;
+                    margin: 0 auto;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    li {
+                        a {
+                            text-decoration: none;
+                            i.fab {
+                                font-weight: 400;
+                                font-size: 1.25em;
+                                color: #656565;
+                                &:hover {
+                                    color: #A41D23;
+                                }
+                            }
                         }
                     }
                 }
             }
         }
         .site-map {
-            order: 4;
             padding: 0 1.5625em;
             .links {
                 width: 100%;
@@ -310,15 +313,17 @@ footer {
                 margin: 0 auto;
                 flex-wrap: wrap;
                 line-height: 16px;
+                .mobile-app {
+                    display: none;
+                }
                 .social-app-wrapper {
                     width: 50%;
-                    order: 2;
                     display: flex;
                     flex-direction: column;
                     padding-left: 120px;
                     .download-app-container {
+                        display: inline-block;
                         padding: 0;
-                        order: 2;
                         margin-bottom: 50px;
                         border: 0;
                         .title {
@@ -342,7 +347,6 @@ footer {
                     }
                     .social-media-container {
                         padding: 0;
-                        order: 3;
                         margin: 0;
                         border: 0;
                         .title {
@@ -367,7 +371,6 @@ footer {
                     line-height: 16px;
                     width: 50%;
                     padding: 0;
-                    order: 1;
                     .links {
                         .links-title {
                             display: block;

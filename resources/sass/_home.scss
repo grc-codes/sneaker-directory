@@ -19,8 +19,8 @@ section#landing {
             position: relative;
             top: -2em;
             width: 100%;
-            padding: 6.4vw;
-            width: 80%;
+            padding: 1.5em;
+            width: 90%;
             z-index: 2;
             background: #fff;
             margin: 0 auto;
@@ -32,23 +32,24 @@ section#landing {
                     margin-bottom: 1em;
                     text-transform: uppercase;
                     color: #a41d23;
-                    font-size: 3.2vw;
+                    font-size: 12px;
                 }
                 h5.box-title {
-                    font-size: 6.4vw;
-                    color: #000;
+                    width: 100%;
+                    font-size: 24px;
                     
                 }
                 p.box-text {
+                    width: 100%;
                     margin: 0.5em 0 1em;
                     color: #656565;
-                    font-size: 4.267vw;
+                    font-size: 16px;
                     line-height: 1.35;
                 }
                 a.btn {
                     border: 1px solid #a41d23;
                     padding: .5em 1.5em;
-                    font-size: 4.267vw;
+                    font-size: 16px;
                     color: #a41d23;
                     text-decoration: none;
                 }
@@ -60,21 +61,22 @@ section#landing {
         .collection-preview-header {
             width: 100%;
             padding: 1em;
-            font-size: 4.267vw;
+            font-size: 16px;
             display: flex;
             justify-content: space-between;
             background: #f8f8f8;
             .collection-name {
-                font-size: 4.267vw;
+                font-size: 16px;
                 color: #131313;
             }
             a.collection-link {
                 color: #a41d23;
                 text-decoration: none;
-                font-size: 4.267vw;
+                font-size: 16px;
 
                 i.fa {
                     margin-left: .5em;
+                    color: #a41d23;
                 }
             }
         }

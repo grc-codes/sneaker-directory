@@ -7,8 +7,12 @@
 @section('content')
     <section id="collection-page">
         <div class="hero">
-            <div class="hero-img">
-                <img src="/img/collection-hero-mobile.jpg" />
+            <div class="hero-img-wrapper">
+                <div class="hero-img-container">
+                    <div class="hero-img">
+                        <img src="/img/collection-hero-mobile.jpg" />
+                    </div>
+                </div>
             </div>
             <div class="hero-text">
                 <div class="hero-box">
