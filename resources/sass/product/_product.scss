@@ -1,0 +1,156 @@
+section#product-page {
+    margin-top: 40px;
+    width: 100%;
+    font-family: proxima-nova, Helvetica, Arial, sans-serif;
+    padding: 0 1em;
+    background: #f8f8f8;
+    .product-page-container {
+        display: flex;
+        width: 100%;
+        form#product-addtocart-form {
+            .product-wrapper {
+                margin-top: 2em;
+                .product-top {
+                    margin-bottom: -10px;
+                    .breadcrumbs {
+                        line-height: normal;
+                        margin-bottom: 2em;
+                        color: #656565;
+                        ul {
+                            list-style: none;
+                            li {
+                                display: inline;
+                                white-space: nowrap;
+                                font-size: .75em;
+                                &:last-of-type {
+                                    a {
+                                        span.name {
+                                        font-weight: 400;
+                                        color: #a41d23;
+                                        }
+                                    }
+                                }
+                                a {
+                                    cursor: pointer;
+                                    display: inline-block;
+                                    text-decoration: none;
+                                    span.name {
+                                        padding: 0 .35em;
+                                        color: #656565;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .product-brand {
+                        margin-top: -.5em;
+                        font-size: 1.25em;
+                        font-weight: 400;
+                        letter-spacing: .02em;
+                        line-height: 1.3;
+                        color: #131313;
+                        margin-bottom: .15em;
+                    }
+                    h1.product-name {
+                        font-size: 1.25em;
+                        font-weight: 400;
+                        letter-spacing: .02em;
+                        line-height: 1.3;
+                        color: #656565;
+                        margin-bottom: calc(20px - .25em);
+                        span {
+                            color: #656565;
+                        }
+                    }
+                }
+                .product-mobile-gallery {
+                    height: 60vw;
+                    margin: 0;
+                    width: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    .product-mobile-gallery-images {
+                        overflow: hidden;
+                        position: relative;
+                        height: auto;
+                        width: 100%;
+                        display: block;
+                        button.prev-arrow {
+                            top: 50%;
+                            left: 25px;
+                            margin: -20px;
+                            background: url(https://static.stadiumgoods.com/skin/frontend/stadium/assets/images/icon-nav-arrow.svg) no-repeat;
+                            transform: rotate(180deg);
+                            position: absolute;
+                            text-indent: -999px;
+                            width: 24px;
+                            height: 40px;
+                            padding: 0;
+                            z-index: 1;
+                            &:hover {
+                                color: #a41d23;
+                            }
+                        }
+                        .image-list {
+                            transform: translateZ(0);
+                            overflow: hidden;
+                            margin: 0;
+                            padding: 0;
+                            position: relative;
+                            display: block;
+                        }
+                        button.next-arrow {
+                            top: 50%;
+                            right: 25px;
+                            margin: -20px;
+                            background: url() no-repeat;
+                            position: absolute;
+                            text-indent: -999px;
+                            width: 24px;
+                            height: 40px;
+                            padding: 0;
+                            z-index: 1;
+                        }
+                    }
+                }
+                .product-shop {
+                    #product-options-wrapper {
+                        min-height: 60px;
+                        position: relative;
+                        .product-sizes {
+                            font-size: .875em;
+                            border: 1px solid rgba(0,0,0,.06);
+                            background: #fff;
+                            min-height: 60px;
+                            margin-bottom: 10px;
+                            .selected-product-size {
+                                height: 60px;
+                                text-align: center;
+                                color: #656565;
+                                display: block;
+                                z-index: 10;
+                                float: none;
+                                position: relative;
+                                min-height: 60px;
+                                line-height: 1;
+                                span.product-sizes-detail {
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    padding-right: 40px;
+                                    padding-left: 18px;
+                                }
+                                i.fas {
+                                    position: absolute;
+                                    top: 22px;
+                                    right: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

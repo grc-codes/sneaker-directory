@@ -4,10 +4,10 @@
     @include('includes.metatags')
 </head>
 <body>
-    @include('includes.side-menu')
     <div id="navigation">
         @include('includes.header')
     </div>
+    @include('includes.side-menu')
     <div id="page-content">
         @yield('content')
         @include('includes.footer')
@@ -20,9 +20,6 @@
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-window-close');
             menu.classList.toggle('active');
-        }
-        function footerValidation() {
-            console.log("Hi");
         }
     </script>
 </body>

@@ -143,7 +143,7 @@ header {
   width: 100%;
   padding: 5px 0.625em;
   top: 0;
-  z-index: 30;
+  z-index: 36;
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
@@ -156,7 +156,7 @@ header .navbar {
 
 header .navbar i.fas {
   font-size: 16px;
-  z-index: 10;
+  z-index: 20;
   color: #a2a6a9;
 }
 
@@ -331,7 +331,7 @@ section#landing .collection-preview .collection-preview-grid a.sneaker-preview .
 
 @media screen and (min-width: 769px) {
   section#landing {
-    margin-top: 96px;
+    margin-top: 0;
   }
 
   section#landing .hero {
@@ -566,6 +566,178 @@ section#collection-page .collection-preview-grid a.sneaker-preview .sneaker-pric
   section#collection-page .collection-preview-grid a.sneaker-preview .sneaker-price {
     font-size: 16px;
   }
+}
+
+section#product-page {
+  margin-top: 40px;
+  width: 100%;
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+  padding: 0 1em;
+  background: #f8f8f8;
+}
+
+section#product-page .product-page-container {
+  display: flex;
+  width: 100%;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper {
+  margin-top: 2em;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-top {
+  margin-bottom: -10px;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-top .breadcrumbs {
+  line-height: normal;
+  margin-bottom: 2em;
+  color: #656565;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-top .breadcrumbs ul {
+  list-style: none;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-top .breadcrumbs ul li {
+  display: inline;
+  white-space: nowrap;
+  font-size: 0.75em;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-top .breadcrumbs ul li:last-of-type a span.name {
+  font-weight: 400;
+  color: #a41d23;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-top .breadcrumbs ul li a {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-top .breadcrumbs ul li a span.name {
+  padding: 0 0.35em;
+  color: #656565;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-top .product-brand {
+  margin-top: -0.5em;
+  font-size: 1.25em;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  color: #131313;
+  margin-bottom: 0.15em;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-top h1.product-name {
+  font-size: 1.25em;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  color: #656565;
+  margin-bottom: calc(20px - .25em);
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-top h1.product-name span {
+  color: #656565;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-mobile-gallery {
+  height: 60vw;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-mobile-gallery .product-mobile-gallery-images {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-mobile-gallery .product-mobile-gallery-images button.prev-arrow {
+  top: 50%;
+  left: 25px;
+  margin: -20px;
+  background: url(https://static.stadiumgoods.com/skin/frontend/stadium/assets/images/icon-nav-arrow.svg) no-repeat;
+  transform: rotate(180deg);
+  position: absolute;
+  text-indent: -999px;
+  width: 24px;
+  height: 40px;
+  padding: 0;
+  z-index: 1;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-mobile-gallery .product-mobile-gallery-images button.prev-arrow:hover {
+  color: #a41d23;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-mobile-gallery .product-mobile-gallery-images .image-list {
+  transform: translateZ(0);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-mobile-gallery .product-mobile-gallery-images button.next-arrow {
+  top: 50%;
+  right: 25px;
+  margin: -20px;
+  background: url() no-repeat;
+  position: absolute;
+  text-indent: -999px;
+  width: 24px;
+  height: 40px;
+  padding: 0;
+  z-index: 1;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-shop #product-options-wrapper {
+  min-height: 60px;
+  position: relative;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-shop #product-options-wrapper .product-sizes {
+  font-size: 0.875em;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: #fff;
+  min-height: 60px;
+  margin-bottom: 10px;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-shop #product-options-wrapper .product-sizes .selected-product-size {
+  height: 60px;
+  text-align: center;
+  color: #656565;
+  display: block;
+  z-index: 10;
+  float: none;
+  position: relative;
+  min-height: 60px;
+  line-height: 1;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-shop #product-options-wrapper .product-sizes .selected-product-size span.product-sizes-detail {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
+  padding-left: 18px;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-shop #product-options-wrapper .product-sizes .selected-product-size i.fas {
+  position: absolute;
+  top: 22px;
+  right: 15px;
 }
 
 footer {
@@ -1049,6 +1221,7 @@ footer .links-container .site-map .links ul li a:hover {
 
 #menu-container.active {
   transform: translate3d(0, 0, 0);
+  position: fixed;
 }
 
 #menu-container ul {
@@ -1087,10 +1260,13 @@ footer .links-container .site-map .links ul li a:hover {
 
 @media only screen and (min-width: 769px) {
   #menu-container {
-    position: relative;
+    background: #fff;
+    position: fixed;
+    top: 60px;
+    z-index: 20;
     height: auto;
-    transform: translate3d(0, 0, 0);
     border-bottom: 1px solid #c6c8ca;
+    transform: translate3d(0, 0, 0);
   }
 
   #menu-container .menu-wrapper {
@@ -1141,24 +1317,20 @@ footer .links-container .site-map .links ul li a:hover {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 12;
   overflow: hidden;
   background: #fff;
-}
-
-#page-content {
-  display: block;
-  transition: display 0.3s ease-in-out 0.3s;
-  overflow: hidden;
-}
-
-#page-content.menu-active {
-  display: none;
 }
 
 *,
 body {
   font-family: proxima-nova, Helvetica, Arial, sans-serif;
-  color: #131313;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 769px) {
+  #navigation {
+    position: fixed;
+  }
 }
 

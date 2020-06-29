@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'StaticPagesController@home');
 Route::get('/collection', 'StaticPagesController@collection');
+Route::get('/product', 'StaticPagesController@product');

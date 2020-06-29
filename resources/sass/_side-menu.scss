@@ -9,6 +9,7 @@
     transition: transform .3s ease-in-out;
     &.active {
         transform: translate3d(0, 0, 0);
+        position: fixed;
     }
     ul {
         width: 100%;
@@ -44,10 +45,13 @@
 
 @media only screen and (min-width: 769px) {
     #menu-container {
-        position: relative;
+        background: #fff;
+        position: fixed;
+        top: 60px;
+        z-index: 20;
         height: auto;
-        transform: translate3d(0,0,0);
         border-bottom: 1px solid #c6c8ca;
+        transform: translate3d(0, 0, 0);
 
         .menu-wrapper {
             max-width: 1200px;

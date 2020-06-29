@@ -13,6 +13,10 @@ class StaticPagesController extends Controller {
     public function collection() {
         return view('collection/collection-page');
     }
+
+    public function product() {
+        return view('product/product-page');
+    }
 }
 
 ?>

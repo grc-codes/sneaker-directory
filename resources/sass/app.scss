@@ -3,6 +3,7 @@
 @import "header";
 @import "home";
 @import "collection/collection";
+@import "product/product";
 @import "footer";
 @import "side-menu";
 
@@ -11,21 +12,18 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 20;
+    z-index: 12;
     overflow: hidden;
     background: #fff;
 }
 
-#page-content {
-    display: block;
-    transition: display .3s ease-in-out .3s;
-    overflow: hidden;
-    &.menu-active {
-        display: none;
-    }
-}
-
 *, body {
     font-family: proxima-nova, Helvetica, Arial, sans-serif;
-    color: #131313;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 769px) {
+    #navigation {
+        position: fixed;
+    }
 }
