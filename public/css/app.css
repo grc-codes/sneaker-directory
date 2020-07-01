@@ -645,7 +645,7 @@ section#product-page .product-page-container form#product-addtocart-form .produc
 }
 
 section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-mobile-gallery {
-  height: 60vw;
+  height: 40vh;
   margin: 0;
   width: 100%;
   overflow: hidden;
@@ -660,44 +660,17 @@ section#product-page .product-page-container form#product-addtocart-form .produc
   display: block;
 }
 
-section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-mobile-gallery .product-mobile-gallery-images button.prev-arrow {
-  top: 50%;
-  left: 25px;
-  margin: -20px;
-  background: url(https://static.stadiumgoods.com/skin/frontend/stadium/assets/images/icon-nav-arrow.svg) no-repeat;
-  transform: rotate(180deg);
-  position: absolute;
-  text-indent: -999px;
-  width: 24px;
-  height: 40px;
-  padding: 0;
-  z-index: 1;
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-mobile-gallery .product-mobile-gallery-images .image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
 }
 
-section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-mobile-gallery .product-mobile-gallery-images button.prev-arrow:hover {
-  color: #a41d23;
-}
-
-section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-mobile-gallery .product-mobile-gallery-images .image-list {
-  transform: translateZ(0);
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  display: block;
-}
-
-section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-mobile-gallery .product-mobile-gallery-images button.next-arrow {
-  top: 50%;
-  right: 25px;
-  margin: -20px;
-  background: url() no-repeat;
-  position: absolute;
-  text-indent: -999px;
-  width: 24px;
-  height: 40px;
-  padding: 0;
-  z-index: 1;
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-mobile-gallery .product-mobile-gallery-images .image-container img {
+  width: 100%;
+  height: 100%;
 }
 
 section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-shop #product-options-wrapper {
@@ -738,6 +711,157 @@ section#product-page .product-page-container form#product-addtocart-form .produc
   position: absolute;
   top: 22px;
   right: 15px;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-shop .product-options-bottom .add-to-cart {
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-shop .product-options-bottom .add-to-cart .add-to-cart-btn button.btn-cart {
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  cursor: pointer;
+  background: #131313;
+  border: 1px solid #131313;
+  color: #fff;
+  font-weight: 600;
+  padding: 0 2em;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-details {
+  clear: both;
+  margin-top: 20px;
+  border-top: 1px solid #e3e3e3;
+  padding-top: 30px;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-details h4 {
+  font-size: 1.25em;
+  color: #656565;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-details .product-details-description {
+  margin-bottom: 20px;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-details .product-details-description p {
+  color: #656565;
+  font-size: 0.875em;
+  letter-spacing: 0.035em;
+  line-height: 1.6;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-details .product-details-additional-info {
+  margin-bottom: 20px;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-details .product-details-additional-info table#product-additional-info {
+  border-collapse: collapse;
+  border-spacing: 10px;
+  letter-spacing: 0.035em;
+  text-align: left;
+  font-size: 0.875em;
+  width: 100%;
+  color: #131313;
+  letter-spacing: 0.035em;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-details .product-details-additional-info table#product-additional-info tbody tr th.label {
+  color: #656565;
+  vertical-align: top;
+  margin-bottom: 0.5em;
+  display: inline-block;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+}
+
+section#product-page .product-page-container form#product-addtocart-form .product-wrapper .product-details .product-details-additional-info table#product-additional-info tbody tr td {
+  color: #656565;
+  vertical-align: top;
+}
+
+#product-modal {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#product-modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+#product-modal .modal-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#product-modal .modal-wrapper .modal-wrapper2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#product-modal .modal-wrapper .modal-wrapper2 .modal-header {
+  z-index: 101;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+  border: 1px solid #c6c8ca;
+  background: #fff;
+  overflow: hidden;
+  color: #131313;
+}
+
+#product-modal .modal-wrapper .modal-wrapper2 .modal-header .close {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#product-modal .modal-wrapper .modal-wrapper2 .modal-header .close i.fas {
+  color: #898b8e;
+  font-size: 0.75em;
+}
+
+#product-modal .modal-wrapper .modal-wrapper2 .modal-content {
+  margin-top: 60px;
+  padding: 2px 0;
 }
 
 footer {
@@ -1326,6 +1450,10 @@ footer .links-container .site-map .links ul li a:hover {
 body {
   font-family: proxima-nova, Helvetica, Arial, sans-serif;
   box-sizing: border-box;
+}
+
+#page-content {
+  width: 100vw;
 }
 
 @media only screen and (min-width: 769px) {
