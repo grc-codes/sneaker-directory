@@ -75,6 +75,224 @@
                                     </div>
                                 </div>
                             </div>
+                            <div id="product-modal">
+                                <div class="modal-wrapper">
+                                    <div class="modal-wrapper2">
+                                        <div class="modal-content">
+                                            <div class="model-content-container">
+                                                <div id="product-modal-container">
+                                                    <div class="product-sizes-list">
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    5
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    5.5
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    6
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    6.5
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    7
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    7.5
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    8
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    8.5
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    9
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    9.5
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    10
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    10.5
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    11
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    11.5
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    12
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    12.5
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                        <label class="product-sizes-list-option">
+                                                            <span class="product-sizes-detail">
+                                                                <span class="product-sizes-size">
+                                                                    13
+                                                                </span>
+                                                                <span class="product-sizes-price">
+                                                                    <span class="price">
+                                                                        $569.00
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="product-options-bottom">
                                 <div class="add-to-cart">
                                     <div class="add-to-cart-btn">
@@ -116,7 +334,7 @@
             </form>
         </div>
     </section>
-    <div id="product-modal">
+    <div id="product-modal-mobile">
         <div class="modal-wrapper">
             <div class="modal-wrapper2">
                 <div class="modal-header">
@@ -126,7 +344,7 @@
                 </div>
                 <div class="modal-content">
                     <div class="modal-content-container">
-                        <div id="product-modal-content">
+                        <div id="product-modal-content-mobile">
                             <div class="product-sizes-list">
                                 <div class="product-sizes-list-options">
                                     <label class="product-sizes-list-option">

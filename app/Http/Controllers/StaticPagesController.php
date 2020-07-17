@@ -17,6 +17,10 @@ class StaticPagesController extends Controller {
     public function product() {
         return view('product/product-page');
     }
+    
+    public function brand() {
+        return view('brand/brand-page');
+    }
 }
 
 ?>

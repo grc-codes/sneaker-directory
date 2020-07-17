@@ -32,12 +32,12 @@
                 font-size: .75em;
                 letter-spacing: .1em;
                 text-transform: uppercase;
-                color: #898b8e;
+                color: #656565;
                 background: #fff;
                 text-decoration: none;
             }
             i.fas {
-                color: #898b8e;
+                color: #656565;
             }
         }
     }
@@ -50,7 +50,6 @@
         top: 60px;
         z-index: 20;
         height: auto;
-        border-bottom: 1px solid #c6c8ca;
         transform: translate3d(0, 0, 0);
 
         .menu-wrapper {
